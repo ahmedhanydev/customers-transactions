@@ -16,5 +16,5 @@ This is a customer transactions application built with Vite, React, TypeScript, 
 - **Charting**: Recharts 
 
 ## Deployment
-[Customer Transactions](https://customers-transactions-two.vercel.app/)
+[Customer Transactions](https://ahmedhanydev.github.io/customers-transactions/)
 
