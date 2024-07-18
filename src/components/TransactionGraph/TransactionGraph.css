@@ -1,0 +1,23 @@
+.graph-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.graph-header {
+  color: #fff;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 50px 0 50px 0;
+}
+
+@media (max-width: 767px) {
+  .graph-container {
+    flex-direction: column;
+  }
+  .graph-header {
+    font-size: small;
+
+    margin: 30px 0 30px 0;
+  }
+}

@@ -1,0 +1,30 @@
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.inputs-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.inputs-container input {
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .inputs-container {
+    flex-direction: column;
+  }
+}

@@ -8,8 +8,8 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { CombinedData } from "../types";
-
+import { CombinedData } from "../../types";
+import "./TransactionGraph.css";
 interface Props {
   transactions: CombinedData[];
   customer: number;
@@ -31,19 +31,19 @@ const TransactionGraph = ({ transactions, customer }: Props) => {
   }));
 
   return (
-    <div className="w-full">
-      <h2 className="text-xl font-bold mb-6">
+    <div className="graph-container">
+      <h2 className="graph-header">
         {customerTransactions[0].customerName} ({customerTransactions.length}{" "}
         Transactions) | Total Amount = {totalAmount}
       </h2>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
-          <YAxis />
+          <XAxis dataKey="date" stroke="#FF4C4C" />
+          <YAxis stroke="#FF4C4C" />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="amount" stroke="#8884d8" />
+          <Line type="monotone" dataKey="amount" stroke="#06D001" />
         </LineChart>
       </ResponsiveContainer>
     </div>

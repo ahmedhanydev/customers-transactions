@@ -1,3 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #204644, #5f2c82);
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,128 @@
+/* .table-wrapper {
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+} */
+
+/* table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+} */
+
+/* /html,
+body {
+	height: 100%;
+} */
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+tr {
+  cursor: pointer;
+}
+.active {
+  background-color: #04e2ff;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+thead th {
+  background-color: #55608f;
+  color: #fff;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  table {
+    display: block;
+    width: 100%;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  }
+  .table-container:before {
+    content: "Scroll horizontally >";
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: white;
+    padding: 0 0 10px;
+  }
+  table thead,
+  table tbody,
+  table thead th {
+    display: block;
+  }
+  table thead th:last-child {
+    border-bottom: none;
+  }
+  table thead {
+    float: left;
+  }
+  table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  table td,
+  table th {
+    height: 60px;
+    box-sizing: border-box;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  table tbody tr {
+    display: table-cell;
+  }
+
+  table tr td {
+    border-right: 1px solid #e6e4e4;
+    border-bottom: 1px solid #e6e4e4;
+  }
+
+  table tbody td {
+    display: block;
+    text-align: center;
+  }
+}
