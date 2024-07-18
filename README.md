@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Customer Transactions Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a customer transactions application built with Vite, React, TypeScript, and TailwindCSS. The app fetches customer and transaction data from a local JSON server and displays it in a responsive table. Users can filter the data by customer name and transaction amount, highlight selected customers, and view a graph of total transaction amounts per day for each customer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Adapts to different screen sizes.
+- **Filtering**: Filter transactions by customer name and amount.
+- **Highlighting**: Highlight selected customer rows.
+- **Graph Visualization**: View total transaction amounts per day for each customer.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: Vite, React, TypeScript, TailwindCSS
+- **Backend**: JSON Server for local data hosting
+- **Charting**: Recharts 
 
-- Configure the top-level `parserOptions` property like this:
+## Deployment
+[Customer Transactions](https://customers-transactions-two.vercel.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
