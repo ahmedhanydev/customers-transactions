@@ -5,7 +5,7 @@ import HomePage from "./HomePage";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/customers-transactions/">
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
